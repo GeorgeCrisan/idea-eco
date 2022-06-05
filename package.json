@@ -17,7 +17,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "https-preview": "serve dist",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "serve dist"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
