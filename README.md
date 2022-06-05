@@ -137,20 +137,6 @@ TBD: more information about the file/folder structure will be added soon.
 
 Out of the box, it's a `Progressive Web Application`. It can be installed on mobile and desktop devices 🙂, it can work offline, and many more. Check more about PWAs [here](https://web.dev/progressive-web-apps/)
 
-Your users will also be informed about the new version of your app:
-
-<img src="./public/pwa-reload.png" width="600" title="pwa reload">
-
-#### Performance
-
-After all these integrations the biggest bundle size is `~79KB`. It means even the first load will be pretty fast (in my case it's `1.1s`), further loads (already cached by `service worker` and `workbox`) will take `~0.25s`.
-
-<img src="./public/bundle.png" title="bundle">
-
-<img src="./public/audit.png" title="audit">
-
-NOTE: The performance is not 100 because it's running on demo server.
-
 #### Hotkeys
 
 A basic implementation of hotkeys is demonstrated here. Check the [src/sections/HotKeys](./src/sections/HotKeys/HotKeys.tsx) for more information.
