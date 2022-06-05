@@ -227,29 +227,16 @@ The last one is a router-based switcher. All routes are defined in [src/routes](
 
 ## Usage
 
-You can use this template by just pressing `Use this temaplte`.
-
-<img src="./public/use-template.png" width="300" title="Use this temaplte">
-
-Or you can fork/clone it.
 
 Install dependencies:
 
-```bash
-npm install # or yarn
-```
+yarn install
 
-In order to run it in development, run:
-
-```bash
-npm run dev # or yarn dev
-```
+yarn dev
 
 In order to do a production build, run:
 
-```bash
-npm run build # yarn build
-```
+yar build
 
 There are two more scripts:
 
@@ -257,13 +244,3 @@ There are two more scripts:
 
 - `preview` command will boot up local static web server that serves the files from `dist` folder. It's an easy way to check if the production build looks OK in your local environment.
 - `https-preview` is the same, but with HTTPS. It's handy for testing your PWA capabilities in your local environment.
-
-## [Live Demo](https://react-pwa.surenatoyan.com/)
-
-<div>
- <img src="./public/demo-dark.png" width="280" title="Dark demo"> <img src="./public/demo-light.png" width="280" title="Light demo">
-</div>
-
-## License
-
-[MIT](./LICENSE)
