@@ -2,7 +2,7 @@
   "name": "idea-eco",
   "version": "0.0.1",
   "description": "Not sure WIP",
-  "homepage": "https://github.com/GeorgeCrisan/idea-eco/",
+  "homepage": "https://github.com/GeorgeCrisan/idea-eco",
   "repository": {
     "type": "git",
     "url": "https://github.com/GeorgeCrisan/idea-eco"
@@ -19,7 +19,7 @@
     "https-preview": "serve dist",
     "prepare": "husky install",
     "start": "serve dist",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build --base=/idea-eco/",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
