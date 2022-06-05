@@ -2,11 +2,11 @@ import isMobile from '@/utils/is-mobile';
 
 import type { Notifications } from './types';
 
-const title = 'React PWA';
+const title = 'what title should this have?';
 
-const email = 'auther-email@gmail.com';
+const email = 'georgerdp@gmail.com';
 
-const repository = 'https://github.com/suren-atoyan/react-pwa';
+const repository = 'https://github.com/GeorgeCrisan/idea-eco';
 
 const messages = {
   app: {
@@ -19,12 +19,12 @@ const messages = {
     },
   },
   loader: {
-    fail: 'Hmmmmm, there is something wrong with this component loading process... Maybe trying later would be the best idea',
+    fail: 'Error from loader, fix your component',
   },
   images: {
-    failed: 'something went wrong during image loading :(',
+    failed: 'something went wrong during image loading',
   },
-  404: 'Hey bro? What are you looking for?',
+  404: 'Are you lost?',
 };
 
 const dateFormat = 'MMMM DD, YYYY';
@@ -50,16 +50,5 @@ const defaultMetaTags = {
   image: '/cover.png',
   description: 'Starter kit for modern web applications',
 };
-const giphy404 = 'https://giphy.com/embed/xTiN0L7EW5trfOvEk0';
 
-export {
-  loader,
-  notifications,
-  dateFormat,
-  messages,
-  repository,
-  email,
-  title,
-  defaultMetaTags,
-  giphy404,
-};
+export { loader, notifications, dateFormat, messages, repository, email, title, defaultMetaTags };
