@@ -6,12 +6,10 @@ const title = 'what title should this have?';
 
 const email = 'georgerdp@gmail.com';
 
-const repository = 'https://github.com/GeorgeCrisan/idea-eco';
-
 const messages = {
   app: {
     crash: {
-      title: 'Oooops... Sorry, I guess, something went wrong. You can:',
+      title: 'Error! Something is wrong.',
       options: {
         email: `contact with author by this email - ${email}`,
         reset: 'Press here to reset the application',
@@ -51,4 +49,4 @@ const defaultMetaTags = {
   description: 'Starter kit for modern web applications',
 };
 
-export { loader, notifications, dateFormat, messages, repository, email, title, defaultMetaTags };
+export { loader, notifications, dateFormat, messages, email, title, defaultMetaTags };
