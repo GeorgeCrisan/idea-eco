@@ -2,7 +2,7 @@
   "name": "idea-eco",
   "version": "0.0.1",
   "description": "Not sure WIP",
-  "homepage": "https://github.com/GeorgeCrisan/idea-eco",
+  "homepage": "https://github.com/GeorgeCrisan/test-idea",
   "repository": {
     "type": "git",
     "url": "https://github.com/GeorgeCrisan/idea-eco"
@@ -18,7 +18,9 @@
     "preview": "vite preview",
     "https-preview": "serve dist",
     "prepare": "husky install",
-    "start": "serve dist"
+    "start": "serve dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -39,6 +41,7 @@
     "recoil": "^0.7.2"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/node": "^17.0.36",
     "@types/react": "^18.0.9",

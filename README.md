@@ -214,7 +214,7 @@ yarn dev
 
 In order to do a production build, run:
 
-yar build
+yarn build
 
 There are two more scripts:
 
