@@ -9,7 +9,7 @@ function Pages() {
   return (
     <Box sx={{ height: (theme) => getPageHeight(theme) }}>
       <Routes>
-        <Route path="/" element={<Navigate replace to="/home" />} />
+        <Route path="/" element={<Navigate replace to="/idea-eco/" />} />
         {Object.values(routes).map(({ path, component: Component }) => {
           return <Route key={path} path={path} element={<Component />} />;
         })}

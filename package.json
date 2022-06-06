@@ -13,13 +13,13 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "APP_ENV=development vite",
+    "build": "tsc && APP_ENV=production vite build",
     "preview": "vite preview",
     "https-preview": "serve dist",
     "prepare": "husky install",
     "start": "serve dist",
-    "predeploy": "yarn build --base=/idea-eco/",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

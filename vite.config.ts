@@ -5,8 +5,11 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 import manifest from './manifest.json';
 
+console.log(process.env.APP_ENV);
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/idea-eco/", // process.env.APP_ENV === 'production' ? '/idea-eco/' : '/',
   plugins: [
     react(),
     VitePWA({
