@@ -9,12 +9,6 @@ import asyncComponentLoader from '@/utils/loader';
 import { Pages, Routes } from './types';
 
 const routes: Routes = {
-  [Pages.Root]: {
-    component: asyncComponentLoader(() => import('@/pages/Welcome')),
-    path: '/',
-    title: 'Welcome',
-    icon: HomeIcon,
-  },
   [Pages.Welcome]: {
     component: asyncComponentLoader(() => import('@/pages/Welcome')),
     path: '/idea-eco/',

@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 
@@ -9,6 +9,7 @@ function Pages() {
   return (
     <Box sx={{ height: (theme) => getPageHeight(theme) }}>
       <Routes>
+        <Route path="/" element={<Navigate replace to="/home" />} />
         {Object.values(routes).map(({ path, component: Component }) => {
           return <Route key={path} path={path} element={<Component />} />;
         })}
